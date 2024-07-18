@@ -1,0 +1,10 @@
+# Node modules
+node_modules/
+
+# Compiled output
+*.log
+*.zip
+*.pdf
+*.html
+*.jpg
+*.PNG
