@@ -23,7 +23,7 @@ body {
     text-align: center;
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow */
     animation: floatAnimation 3s ease-in-out infinite alternate;
 }
 
@@ -58,7 +58,7 @@ h1 {
     margin-bottom: 20px;
     cursor: pointer;
     transition: color 0.3s ease;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Soft text shadow */
 }
 
 h1:hover {
@@ -107,7 +107,7 @@ input[type="password"] {
     border: none;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft box shadow */
     transition: background-color 0.3s ease, transform 0.3s ease;
     font-size: 1.2rem;
 }
@@ -116,6 +116,7 @@ input[type="email"]:focus,
 input[type="password"]:focus {
     background-color: #fff;
     transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on focus */
 }
 
 button {
@@ -127,12 +128,13 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     font-size: 1.2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft box shadow */
 }
 
 button:hover {
     background-color: #ff6bcb;
     transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .answer-buttons {
@@ -163,12 +165,13 @@ button:hover {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     font-size: 1.2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft box shadow */
 }
 
 .answer-btn:hover {
     background-color: #ff6bcb;
     transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .quote-page {
