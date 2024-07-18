@@ -26,12 +26,12 @@ const questions = [
 
 // Function to handle login submission
 document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
+    event.preventDefault(); // Prevent default form submission
+
     // Simulate login success (replace with actual login logic)
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
-    
+
     // Assuming login is successful for demonstration
     if (email && password) {
         // Navigate to questions page
@@ -58,18 +58,21 @@ function renderQuestion(index) {
             </div>
         </div>
     `;
-    
+
     const answerButtons = document.querySelectorAll('.answer-btn');
     answerButtons.forEach(button => {
-        button.addEventListener('click', handleAnswerClick);
+        button.addEventListener('click', function(event) {
+            handleAnswerClick(event, index);
+        });
     });
 }
 
 // Handle answer button click
-function handleAnswerClick(event) {
+function handleAnswerClick(event, index) {
+    event.preventDefault(); // Prevent default button action (form submission)
     const answer = event.target.dataset.answer;
     // Logic to handle answer (store, navigate to next question, etc.)
-    alert(`User selected: ${answer}`);
+
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
         renderQuestion(currentQuestionIndex);
@@ -92,6 +95,6 @@ function displayQuoteOfTheDay() {
 
 // Example function to navigate to main hub page (to be implemented)
 function navigateToMainHub() {
-    alert('Navigate to main hub page');
+
     // Implement navigation logic or further actions here
 }
